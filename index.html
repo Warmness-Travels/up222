@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktlista</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <h1>Kontaktlista</h1>
+    
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Namn">
+        <span id="nameError" class="error">Namn saknas.</span>
+
+        <input type="text" id="phone" placeholder="Telefonnummer">
+        <span id="phoneError" class="error">Telefonnummer saknas.</span>
+
+        <input type="email" id="email" placeholder="E-post">
+        <span id="emailError" class="error">E-post saknas.</span>
+
+        <button type="button" id="addContact">Lägg till kontakt</button>
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Namn</th>
+                <th>Telefonnummer</th>
+                <th>E-post</th>
+                <th>Åtgärder</th>
+            </tr>
+        </thead>
+        <tbody id="contactList">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
